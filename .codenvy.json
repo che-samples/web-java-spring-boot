@@ -1,5 +1,8 @@
 {
   "v": "4.0",
+  "policies" : {
+    "create" : "perUser"
+  },
   "workspace": {
     "defaultEnv": "java",
     "environments": [
