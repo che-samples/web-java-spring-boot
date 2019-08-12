@@ -1,19 +1,16 @@
 # web-java-spring-boot
 
-# Developer Workspace
-
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=sz7uzyofb8olekkn)
-
-# Recipe
-
-FROM [codenvy/ubuntu_jdk8](https://hub.docker.com/r/codenvy/ubuntu_jdk8/)
+A simple Spring Boot "Hello World!" application, buildable with both maven and gradle. Useful for testing Eclipse Che Java workspaces.
 
 # Commands
 
-| #       | Command           | 
-| :------------- |:------------- |
-| 1      | `cd ${current.project.path} && mvn spring-boot:run` |
+| Task  | Command                    |
+| ----- | -------------------------- |
+| Build | `mvn clean install`        |
+| Run   | `mvn spring-boot:run` |
+| Debug | `mvn -Pdebug spring-boot:run` |
+
 
 # Preview URL
 
-The app runs on port 8080 in the container
+The app runs on port 8080 in the container. When debugging, port 5005 is used for JPDA.
